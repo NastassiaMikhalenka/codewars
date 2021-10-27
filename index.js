@@ -180,3 +180,17 @@ function decode(string) {
   let decode = [...string].map(e => vowelsNum.includes(e) ? e = vowels[vowelsNum.indexOf(e)] : e).join('');
   return decode
 }
+
+
+// Write a function generatePairs (Javascript) / generate_pairs (Python / Ruby) that accepts an integer argument n and generates an array containing the pairs of integers [a, b] that satisfy the following conditions:
+
+
+function generatePairs(n) {
+  let arr = []
+  for (let i = 0; i <= n; i++) {
+    for (let j = i; j <= n; j++) {
+      arr.push([i, j])
+    }
+  }
+  return arr
+}
