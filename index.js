@@ -233,3 +233,17 @@ function kebabize(str) {
   return str.replace(/[0-9]/g, '').split(/(?=[A-Z])/).join('-').toLowerCase() 
 }
 
+// Given a string of words, you need to find the highest scoring word.
+
+// Each letter of a word scores points according to its position in the alphabet: a = 1, b = 2, c = 3 etc.
+
+// You need to return the highest scoring word as a string.
+
+// If two words score the same, return the word that appears earliest in the original string.
+
+// All letters will be lowercase and all inputs will be valid.
+function high(x){
+  let str = x.split(' ').map(x => [...x].reduce((a, b) => a + b.charCodeAt(0) - 96, 0)
+  );
+  return x.split(' ')[str.indexOf(Math.max(...str))];
+}
