@@ -274,3 +274,16 @@ function areYouPlayingBanjo(name) {
 function noSpace(x){
   return x.split(' ').filter(s => s).join('')
 }
+
+// Well of Ideas - Easy Version
+
+function well(x){
+  let item = x.filter(x => x == 'good').length;
+  if (item < 1) {
+    return 'Fail!'
+  } else if (item < 3) {
+    return 'Publish!'
+  } else {
+    return 'I smell a series!'
+  }
+}

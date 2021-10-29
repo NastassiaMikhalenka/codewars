@@ -254,4 +254,19 @@ function noSpace(x) {
   return x.split(' ').filter(function (s) {
     return s;
   }).join('');
+} // Well of Ideas - Easy Version
+
+
+function well(x) {
+  var item = x.filter(function (x) {
+    return x == 'good';
+  }).length;
+
+  if (item < 1) {
+    return 'Fail!';
+  } else if (item < 3) {
+    return 'Publish!';
+  } else {
+    return 'I smell a series!';
+  }
 }
