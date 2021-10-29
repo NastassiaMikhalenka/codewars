@@ -242,4 +242,16 @@ function abbrevName(name) {
 var stringToNumber = function stringToNumber(str) {
   var number = Number(str);
   return number;
-};
+}; // Are You Playing Banjo?
+
+
+function areYouPlayingBanjo(name) {
+  return name + (name[0].toLowerCase() == 'r' ? ' plays' : ' does not play') + " banjo";
+} // Remove String Spaces
+
+
+function noSpace(x) {
+  return x.split(' ').filter(function (s) {
+    return s;
+  }).join('');
+}

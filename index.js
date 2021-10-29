@@ -261,3 +261,16 @@ let stringToNumber = function(str){
   let number = Number(str)
   return number;
 }
+
+
+// Are You Playing Banjo?
+
+function areYouPlayingBanjo(name) {
+  return name + (name[0].toLowerCase() == 'r' ? ' plays' : ' does not play') + " banjo";
+}
+
+// Remove String Spaces
+
+function noSpace(x){
+  return x.split(' ').filter(s => s).join('')
+}
