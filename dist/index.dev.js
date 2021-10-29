@@ -276,4 +276,9 @@ function sumMix(x) {
   return x.reduce(function (x, y) {
     return Number(x) + Number(y);
   }, 0);
+} // Multiply
+
+
+function multiply(a, b) {
+  return a * b;
 }

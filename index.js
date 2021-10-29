@@ -293,3 +293,8 @@ function well(x){
 function sumMix(x){
   return x.reduce((x, y) => Number(x) + Number(y), 0);
 }
+
+// Multiply
+function multiply(a, b){
+  return a * b
+}
