@@ -269,4 +269,11 @@ function well(x) {
   } else {
     return 'I smell a series!';
   }
+} // Sum Mixed Array
+
+
+function sumMix(x) {
+  return x.reduce(function (x, y) {
+    return Number(x) + Number(y);
+  }, 0);
 }

@@ -287,3 +287,9 @@ function well(x){
     return 'I smell a series!'
   }
 }
+
+
+// Sum Mixed Array
+function sumMix(x){
+  return x.reduce((x, y) => Number(x) + Number(y), 0);
+}
