@@ -308,3 +308,20 @@ function gooseFilter (birds) {
     return birds.filter((elm) => !geese.includes(elm))
   // return an array containing all of the strings in the input array except those that match strings in geese
 };
+
+
+// Lario and Muigi Pipe Problem
+
+function pipeFix(numbers){
+  let arr = [];
+    for (let i = numbers[0]; i <= numbers[numbers.length - 1]; i++) {
+      arr.push(i);
+    }
+    return arr;
+  }
+
+  // Sum The Strings
+
+  function sumStr(a,b) {
+    return Number(a)+Number(b)+'';
+  }

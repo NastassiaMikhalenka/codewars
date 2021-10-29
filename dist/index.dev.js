@@ -291,4 +291,19 @@ function gooseFilter(birds) {
   }); // return an array containing all of the strings in the input array except those that match strings in geese
 }
 
-;
+; // Lario and Muigi Pipe Problem
+
+function pipeFix(numbers) {
+  var arr = [];
+
+  for (var i = numbers[0]; i <= numbers[numbers.length - 1]; i++) {
+    arr.push(i);
+  }
+
+  return arr;
+} // Sum The Strings
+
+
+function sumStr(a, b) {
+  return Number(a) + Number(b) + '';
+}
