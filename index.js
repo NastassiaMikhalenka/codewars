@@ -298,3 +298,13 @@ function sumMix(x){
 function multiply(a, b){
   return a * b
 }
+
+// Filter out the geese
+
+
+function gooseFilter (birds) {
+  let geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+   
+    return birds.filter((elm) => !geese.includes(elm))
+  // return an array containing all of the strings in the input array except those that match strings in geese
+};
