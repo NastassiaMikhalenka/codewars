@@ -325,3 +325,11 @@ function pipeFix(numbers){
   function sumStr(a,b) {
     return Number(a)+Number(b)+'';
   }
+
+
+  // Reversed Words
+
+  function reverseWords(str){
+    return str= str.split(' ').reverse().join(' ')
+    
+  }
