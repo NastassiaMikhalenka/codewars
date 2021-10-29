@@ -198,32 +198,6 @@ function findShort(s) {
   return Math.min(...s.split(' ').map(word => word.length));
 }
 
-// Create a function that accepts dimensions, of Rows x Columns, as parameters in order to create a multiplication table sized according to the given dimensions. **The return value of the function must be an array, and the numbers must be Fixnums, NOT strings.
-
-// Example:
-
-// multiplication_table(3,3)
-
-// 1 2 3
-// 2 4 6
-// 3 6 9
-
-// -->[[1,2,3],[2,4,6],[3,6,9]]
-
-// Each value on the table should be equal to the value of multiplying the number in its first row times the number in its first column.
-
-function multiplicationTable(row, col){
-  let array = [];
- for (let i = 1; i <= row; i++){
-   let array2 = [];
-    for (let j = 1; j <= col; j++){
-         array2.push(j * i);
-       }
-   array.push(array2);
- }
- return array;
-}
-
 // Modify the kebabize function so that it converts a camel case string into a kebab case.
 
 // kebabize('camelsHaveThreeHumps') // camels-have-three-humps
@@ -271,12 +245,19 @@ function check(a, x) {
   }
 
 
-  Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+//   Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+// The output should be two capital letters with a dot separating them.
+// It should look like this:
+// Sam Harris => S.H
+// patrick feeney => P.F
 
-The output should be two capital letters with a dot separating them.
+function abbrevName(name){
+  return name.split(' ').map(function(item){return item[0]}).join('.').toUpperCase();
+}
 
-It should look like this:
+// Convert a String to a Number!
 
-Sam Harris => S.H
-
-patrick feeney => P.F
+let stringToNumber = function(str){
+  let number = Number(str)
+  return number;
+}
