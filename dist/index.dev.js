@@ -608,4 +608,9 @@ function matchArrays(v, r) {
   return v.filter(function (v) {
     return r.includes(v);
   }).length;
-}
+} // Filter the number
+
+
+var FilterString = function FilterString(value) {
+  return parseInt(value.replace(/[a-z]/gi, ''));
+};

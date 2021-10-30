@@ -628,3 +628,9 @@ function towerBuilder(nFloors) {
 function matchArrays(v,r){
   return v.filter((v)=>r.includes(v)).length
 }
+
+// Filter the number
+
+var FilterString = function(value) {
+  return parseInt(value.replace(/[a-z]/gi,''))
+}
