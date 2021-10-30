@@ -423,35 +423,17 @@ function pipeFix(numbers){
        return names.slice(0, srt - 1).map(item => item.name).join(", ") + (srt > 1 ? ' & ' : '') + names[srt-1].name;
      }
 
-    //  Match Letters of the Alphabet
-let quoteSample = "The quick brown fox jumps over the lazy dog.";
-let alphabetRegex = /[a-z]/gi;
-let result = quoteSample.match(alphabetRegex); 
+    //  What's the real floor?
 
 
-// Comment Your JavaScript Code
-/* Comment Your JavaScript Code */
-// Comment Your JavaScript Code
-
-
-// Declare JavaScript VariablesPassed
-
-var myName;
-var ourName;
-
-// Storing Values with the Assignment Operator
-
-var a;
-a = 7
-
-
-// Assigning the Value of One Variable to Another
-
-var a;
-a = 7;
-var b;
-b = a
-
-// Initializing Variables with the Assignment Operator
-
-var a = 9;
+    function getRealFloor(n) {
+      if (n === 0 || n === 1) {
+        return 0;
+    } else if (n > 1 && n < 13) {
+        return n - 1;
+    } else if (n > 13) {
+        return n - 2
+    } else if (n < 0) {
+        return -Math.abs(n);
+    }
+}

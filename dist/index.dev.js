@@ -67,13 +67,13 @@ function multiplyAll(arr) {
     if (arr.length == 0) {
       return [];
     } else {
-      var _result = [];
+      var result = [];
 
       for (var i = 0; i < arr.length; i++) {
-        _result.push(arr[i] * n);
+        result.push(arr[i] * n);
       }
 
-      return _result;
+      return result;
     }
   };
 } //   Johnny is a farmer and he annually holds a beet farmers convention "Drop the beet".
@@ -411,26 +411,17 @@ function list(names) {
   return names.slice(0, srt - 1).map(function (item) {
     return item.name;
   }).join(", ") + (srt > 1 ? ' & ' : '') + names[srt - 1].name;
-} //  Match Letters of the Alphabet
+} //  What's the real floor?
 
 
-var quoteSample = "The quick brown fox jumps over the lazy dog.";
-var alphabetRegex = /[a-z]/gi;
-var result = quoteSample.match(alphabetRegex); // Comment Your JavaScript Code
-
-/* Comment Your JavaScript Code */
-// Comment Your JavaScript Code
-// Declare JavaScript VariablesPassed
-
-var myName;
-var ourName; // Storing Values with the Assignment Operator
-
-var a;
-a = 7; // Assigning the Value of One Variable to Another
-
-var a;
-a = 7;
-var b;
-b = a; // Initializing Variables with the Assignment Operator
-
-var a = 9;
+function getRealFloor(n) {
+  if (n === 0 || n === 1) {
+    return 0;
+  } else if (n > 1 && n < 13) {
+    return n - 1;
+  } else if (n > 13) {
+    return n - 2;
+  } else if (n < 0) {
+    return -Math.abs(n);
+  }
+}
