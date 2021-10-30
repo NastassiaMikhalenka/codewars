@@ -564,4 +564,13 @@ function multipleOfIndex(array) {
   return array.filter(function (item, id) {
     return item % id === 0;
   });
+} //  Flatten and sort an array
+
+
+function flattenAndSort(array) {
+  return array.reduce(function (acc, cur) {
+    return acc.concat(cur);
+  }, []).sort(function (a, b) {
+    return a - b;
+  });
 }

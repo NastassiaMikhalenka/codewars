@@ -586,3 +586,10 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 function multipleOfIndex(array) {
   return array.filter((item, id) => item % id === 0);
  }
+
+
+//  Flatten and sort an array
+ function flattenAndSort(array) {
+  return array.reduce((acc, cur) => acc.concat(cur), [])
+  .sort((a, b) => a - b);
+}
