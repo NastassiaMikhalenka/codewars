@@ -395,3 +395,14 @@ function pipeFix(numbers){
         this.ballType = "super";
       }
     };
+
+    // A wolf in sheep's clothing
+
+    function warnTheSheep(queue) {
+      let sheep = queue.length - queue.indexOf('wolf') - 1
+        if (sheep == 0 ){
+          return "Pls go away and stop eating my sheep"
+        } else {
+          return "Oi! Sheep number "+ sheep +"! You are about to be eaten by a wolf!"
+        }
+    }
