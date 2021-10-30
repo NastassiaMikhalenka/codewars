@@ -406,3 +406,11 @@ function pipeFix(numbers){
           return "Oi! Sheep number "+ sheep +"! You are about to be eaten by a wolf!"
         }
     }
+
+
+    // Remove First and Last Character
+
+    function removeChar(str){
+      return str.substring(1,str.length -1);
+     
+     };
