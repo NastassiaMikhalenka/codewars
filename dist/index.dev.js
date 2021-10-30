@@ -533,4 +533,17 @@ function invert(array) {
   return array.map(function (item) {
     return item >= 0 ? -Math.abs(item) : Math.abs(item);
   });
+} // Sum of positive
+
+
+function positiveSum(arr) {
+  var sum = 0;
+
+  for (var _i9 = 0; _i9 < arr.length; _i9++) {
+    if (arr[_i9] > 0) {
+      sum += arr[_i9];
+    }
+  }
+
+  return sum;
 }
