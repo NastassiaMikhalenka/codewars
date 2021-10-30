@@ -311,4 +311,11 @@ function sumStr(a, b) {
 
 function reverseWords(str) {
   return str = str.split(' ').reverse().join(' ');
+} // Odd or Even?
+
+
+function oddOrEven(array) {
+  return array.reduce(function (sum, item) {
+    return sum + item;
+  }, 0) % 2 == 0 ? 'even' : 'odd';
 }
