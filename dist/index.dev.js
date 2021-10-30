@@ -346,4 +346,18 @@ function () {
   }]);
 
   return SmallestIntegerFinder;
-}();
+}(); // Square(n) Sum
+
+
+function squareSum(numbers) {
+  var sum = 0;
+  var square = numbers.map(function (item) {
+    return item * item;
+  });
+
+  for (var i = 0; i < square.length; i++) {
+    sum += square[i];
+  }
+
+  return sum;
+}

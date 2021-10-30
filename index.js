@@ -353,3 +353,15 @@ function pipeFix(numbers){
         return smallest
       }
     }
+
+
+    // Square(n) Sum
+
+    function squareSum(numbers){
+      let sum = 0
+       let square = numbers.map(item => item * item);
+       for (let i = 0; i < square.length; i++) {
+         sum += square[i];
+       }
+       return sum;
+     }
