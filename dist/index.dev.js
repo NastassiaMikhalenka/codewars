@@ -601,4 +601,11 @@ function towerBuilder(nFloors) {
   return _toConsumableArray(Array(nFloors)).map(function (_, i) {
     return " ".repeat(nFloors - 1 - i) + "*".repeat(i * 2 + 1) + " ".repeat(nFloors - 1 - i);
   });
+} // Array comparator
+
+
+function matchArrays(v, r) {
+  return v.filter(function (v) {
+    return r.includes(v);
+  }).length;
 }
