@@ -467,4 +467,13 @@ function likes(names) {
 
 function solutions(str, ending) {
   return str.endsWith(ending);
+} // Get the Middle Character
+
+
+function getMiddle(s) {
+  if (s.length % 2) {
+    return s.substr(s.length / 2, 1);
+  } else {
+    return s.substr(s.length / 2 - 1, 2);
+  }
 }
