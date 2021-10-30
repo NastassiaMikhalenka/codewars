@@ -422,3 +422,8 @@ function pipeFix(numbers){
        if (srt == 0) return '';
        return names.slice(0, srt - 1).map(item => item.name).join(", ") + (srt > 1 ? ' & ' : '') + names[srt-1].name;
      }
+
+    //  Match Letters of the Alphabet
+let quoteSample = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/gi;
+let result = quoteSample.match(alphabetRegex); 

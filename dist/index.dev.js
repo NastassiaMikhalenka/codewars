@@ -67,13 +67,13 @@ function multiplyAll(arr) {
     if (arr.length == 0) {
       return [];
     } else {
-      var result = [];
+      var _result = [];
 
       for (var i = 0; i < arr.length; i++) {
-        result.push(arr[i] * n);
+        _result.push(arr[i] * n);
       }
 
-      return result;
+      return _result;
     }
   };
 } //   Johnny is a farmer and he annually holds a beet farmers convention "Drop the beet".
@@ -411,4 +411,9 @@ function list(names) {
   return names.slice(0, srt - 1).map(function (item) {
     return item.name;
   }).join(", ") + (srt > 1 ? ' & ' : '') + names[srt - 1].name;
-}
+} //  Match Letters of the Alphabet
+
+
+var quoteSample = "The quick brown fox jumps over the lazy dog.";
+var alphabetRegex = /[a-z]/gi;
+var result = quoteSample.match(alphabetRegex);
