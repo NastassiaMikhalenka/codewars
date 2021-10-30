@@ -1,5 +1,11 @@
 "use strict";
 
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
@@ -318,4 +324,26 @@ function oddOrEven(array) {
   return array.reduce(function (sum, item) {
     return sum + item;
   }, 0) % 2 == 0 ? 'even' : 'odd';
-}
+} // Find the smallest integer in the array
+
+
+var SmallestIntegerFinder =
+/*#__PURE__*/
+function () {
+  function SmallestIntegerFinder() {
+    _classCallCheck(this, SmallestIntegerFinder);
+  }
+
+  _createClass(SmallestIntegerFinder, [{
+    key: "findSmallestInt",
+    value: function findSmallestInt(args) {
+      var smallest = args[0];
+      args.forEach(function (i) {
+        return i < smallest && (smallest = i);
+      });
+      return smallest;
+    }
+  }]);
+
+  return SmallestIntegerFinder;
+}();

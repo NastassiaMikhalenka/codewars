@@ -341,3 +341,15 @@ function pipeFix(numbers){
       }, 0) % 2 == 0 ? 'even' : 'odd';
       
     }
+
+    // Find the smallest integer in the array
+
+    class SmallestIntegerFinder {
+      findSmallestInt(args) {
+        let smallest = args[0]
+    
+        args.forEach(i => (i < smallest) && (smallest = i))
+    
+        return smallest
+      }
+    }
