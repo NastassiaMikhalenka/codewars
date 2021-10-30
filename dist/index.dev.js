@@ -403,4 +403,12 @@ function removeChar(str) {
   return str.substring(1, str.length - 1);
 }
 
-;
+; //  Format a string of names like 'Bart, Lisa & Maggie'.
+
+function list(names) {
+  var srt = names.length;
+  if (srt == 0) return '';
+  return names.slice(0, srt - 1).map(function (item) {
+    return item.name;
+  }).join(", ") + (srt > 1 ? ' & ' : '') + names[srt - 1].name;
+}
