@@ -424,4 +424,9 @@ function getRealFloor(n) {
   } else if (n < 0) {
     return -Math.abs(n);
   }
+} // Returning Strings
+
+
+function greets(name) {
+  return "Hello, " + name + " how are you doing today?";
 }
