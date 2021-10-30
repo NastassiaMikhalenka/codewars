@@ -489,4 +489,9 @@ String.prototype.toJadenCase = function () {
   }
 
   return result;
-};
+}; // Disemvowel Trolls
+
+
+function disemvowel(str) {
+  return str.replace(/[aeiouAEIOU]/g, "");
+}

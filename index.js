@@ -509,3 +509,9 @@ function likes(names) {
     }
     return result;
   };
+
+  // Disemvowel Trolls
+
+  function disemvowel(str) {
+    return str.replace(/[aeiouAEIOU]/g, "");
+ }
