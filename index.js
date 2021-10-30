@@ -654,3 +654,10 @@ function bloodMoon(r){
 function countSmileys(arr) {
   return arr.filter(item=>item.match(/(:|;)(-|~)?(\)|D)/)).length
 }
+
+// Create Phone Number
+
+function createPhoneNumber(numbers){
+  numbers = numbers.join('')
+  return '(' + numbers.substring(0, 3) + ') ' + numbers.substring(3, 6) + '-' + numbers.substring(6)
+}
