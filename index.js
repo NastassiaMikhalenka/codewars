@@ -528,3 +528,10 @@ function nicknameGenerator(name){
 function arrayPlusArray(arr1, arr2) {
   return arr1.concat(arr2).reduce((acc, cur) => acc + cur);
 }
+
+// Century From Year
+
+function century(year) {
+  let century = Math.ceil(year/100);
+  return century
+}

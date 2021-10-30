@@ -506,4 +506,10 @@ function arrayPlusArray(arr1, arr2) {
   return arr1.concat(arr2).reduce(function (acc, cur) {
     return acc + cur;
   });
+} // Century From Year
+
+
+function century(year) {
+  var century = Math.ceil(year / 100);
+  return century;
 }
