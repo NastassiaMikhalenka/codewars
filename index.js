@@ -609,3 +609,9 @@ function boolToWord( bool ){
     return "No"
   }
  }
+
+//  Opposite number
+
+function opposite(number) {
+  return -1 * number
+}
