@@ -593,3 +593,8 @@ function multipleOfIndex(array) {
   return array.reduce((acc, cur) => acc.concat(cur), [])
   .sort((a, b) => a - b);
 }
+
+// Beginner - Lost Without a Map
+function maps(x){
+  return x.map(item => item * 2);
+}

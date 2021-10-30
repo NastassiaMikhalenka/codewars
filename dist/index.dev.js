@@ -573,4 +573,11 @@ function flattenAndSort(array) {
   }, []).sort(function (a, b) {
     return a - b;
   });
+} // Beginner - Lost Without a Map
+
+
+function maps(x) {
+  return x.map(function (item) {
+    return item * 2;
+  });
 }
