@@ -647,3 +647,10 @@ function greetw(name) {
 function bloodMoon(r){
   return r*r/4;
 }
+
+
+// Count the smiley faces!
+
+function countSmileys(arr) {
+  return arr.filter(item=>item.match(/(:|;)(-|~)?(\)|D)/)).length
+}

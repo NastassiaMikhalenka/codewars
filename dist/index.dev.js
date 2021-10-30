@@ -624,4 +624,11 @@ function greetw(name) {
 
 function bloodMoon(r) {
   return r * r / 4;
+} // Count the smiley faces!
+
+
+function countSmileys(arr) {
+  return arr.filter(function (item) {
+    return item.match(/(:|;)(-|~)?(\)|D)/);
+  }).length;
 }
