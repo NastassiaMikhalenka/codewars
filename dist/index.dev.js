@@ -512,4 +512,13 @@ function arrayPlusArray(arr1, arr2) {
 function century(year) {
   var century = Math.ceil(year / 100);
   return century;
+} // Is it even?
+
+
+function testEven(n) {
+  if (n % 2 == 0) {
+    return true;
+  } else {
+    return false;
+  }
 }

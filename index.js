@@ -535,3 +535,14 @@ function century(year) {
   let century = Math.ceil(year/100);
   return century
 }
+
+
+// Is it even?
+
+function testEven(n) {
+  if(n % 2 == 0){
+    return true
+  } else {
+    return false
+  }
+}
