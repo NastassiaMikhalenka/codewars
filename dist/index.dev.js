@@ -376,4 +376,13 @@ var uniqueInOrder = function uniqueInOrder(iterable) {
   return [].filter.call(iterable, function (a, i) {
     return iterable[i - 1] !== a;
   });
+}; // Regular Ball Super Ball
+
+
+var Ball = function Ball(ballType) {
+  if (ballType === undefined) {
+    this.ballType = "regular";
+  } else {
+    this.ballType = "super";
+  }
 };
