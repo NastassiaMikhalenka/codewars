@@ -552,3 +552,10 @@ function testEven(n) {
 function basicOp(operation, value1, value2){
   return eval(value1+operation+value2);
 }
+
+// Invert values
+function invert(array) {
+  return array.map((item) => {
+    return item >= 0 ? -Math.abs(item) : Math.abs(item);
+  });
+}
