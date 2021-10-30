@@ -438,3 +438,8 @@ let result = quoteSample.match(alphabetRegex);
 
 var myName;
 var ourName;
+
+// Storing Values with the Assignment Operator
+
+var a;
+a = 7

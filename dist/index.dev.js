@@ -423,4 +423,7 @@ var result = quoteSample.match(alphabetRegex); // Comment Your JavaScript Code
 // Declare JavaScript VariablesPassed
 
 var myName;
-var ourName;
+var ourName; // Storing Values with the Assignment Operator
+
+var a;
+a = 7;
