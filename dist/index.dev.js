@@ -580,4 +580,13 @@ function maps(x) {
   return x.map(function (item) {
     return item * 2;
   });
+} // Convert boolean values to strings 'Yes' or 'No'.
+
+
+function boolToWord(bool) {
+  if (bool == 1) {
+    return "Yes";
+  } else {
+    return "No";
+  }
 }
