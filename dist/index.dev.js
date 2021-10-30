@@ -426,4 +426,9 @@ var myName;
 var ourName; // Storing Values with the Assignment Operator
 
 var a;
+a = 7; // Assigning the Value of One Variable to Another
+
+var a;
 a = 7;
+var b;
+b = a;
