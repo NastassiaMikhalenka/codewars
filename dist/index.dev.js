@@ -448,4 +448,9 @@ function count(string) {
     count[i] ? count[s]++ : count[i] = 1;
   });
   return count;
+} // Jenny's secret message
+
+
+function greetss(name) {
+  if (name === "Johnny") return "Hello, my love!";else return "Hello, " + name + "!";
 }
