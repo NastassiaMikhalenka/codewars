@@ -641,3 +641,9 @@ function greetw(name) {
   if(name == null || name.length == 0) return null;
   return `hello ${name}!`
  }
+
+//  Blood Moon
+
+function bloodMoon(r){
+  return r*r/4;
+}
