@@ -427,3 +427,14 @@ function pipeFix(numbers){
 let quoteSample = "The quick brown fox jumps over the lazy dog.";
 let alphabetRegex = /[a-z]/gi;
 let result = quoteSample.match(alphabetRegex); 
+
+
+// Comment Your JavaScript Code
+/* Comment Your JavaScript Code */
+// Comment Your JavaScript Code
+
+
+// Declare JavaScript VariablesPassed
+
+var myName;
+var ourName;

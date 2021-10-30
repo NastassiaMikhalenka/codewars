@@ -416,4 +416,11 @@ function list(names) {
 
 var quoteSample = "The quick brown fox jumps over the lazy dog.";
 var alphabetRegex = /[a-z]/gi;
-var result = quoteSample.match(alphabetRegex);
+var result = quoteSample.match(alphabetRegex); // Comment Your JavaScript Code
+
+/* Comment Your JavaScript Code */
+// Comment Your JavaScript Code
+// Declare JavaScript VariablesPassed
+
+var myName;
+var ourName;
