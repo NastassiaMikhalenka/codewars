@@ -613,4 +613,10 @@ function matchArrays(v, r) {
 
 var FilterString = function FilterString(value) {
   return parseInt(value.replace(/[a-z]/gi, ''));
-};
+}; // Say hello!
+
+
+function greetw(name) {
+  if (name == null || name.length == 0) return null;
+  return "hello ".concat(name, "!");
+}
