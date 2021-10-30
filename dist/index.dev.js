@@ -594,4 +594,11 @@ function boolToWord(bool) {
 
 function opposite(number) {
   return -1 * number;
+} // Build Tower
+
+
+function towerBuilder(nFloors) {
+  return _toConsumableArray(Array(nFloors)).map(function (_, i) {
+    return " ".repeat(nFloors - 1 - i) + "*".repeat(i * 2 + 1) + " ".repeat(nFloors - 1 - i);
+  });
 }
