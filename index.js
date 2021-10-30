@@ -443,3 +443,13 @@ function pipeFix(numbers){
 function greets(name){
   return "Hello, " + name + " how are you doing today?"
 }
+
+// Find the unique number
+
+function findUniq(arr) {
+  let strayChar = arr[0];
+  if (strayChar !== arr[1] && strayChar !== arr[2]) return strayChar;
+  for(let i = 1; i < arr.length; i++){
+    if(strayChar !== arr[i])return arr[i];
+  }
+}
