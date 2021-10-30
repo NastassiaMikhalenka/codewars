@@ -453,3 +453,13 @@ function findUniq(arr) {
     if(strayChar !== arr[i])return arr[i];
   }
 }
+
+// Count characters in your string
+
+function count (string) {  
+  let count = {};
+  string.split('').forEach(function(s) {
+    count[i] ? count[s]++ : count[i] = 1;
+});
+return count;
+}

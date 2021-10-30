@@ -25,11 +25,11 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 function multiplicationTable(row, col) {
   var array = [];
 
-  for (var i = 1; i <= row; i++) {
+  for (var _i = 1; _i <= row; _i++) {
     var array2 = [];
 
     for (var j = 1; j <= col; j++) {
-      array2.push(j * i);
+      array2.push(j * _i);
     }
 
     array.push(array2);
@@ -69,8 +69,8 @@ function multiplyAll(arr) {
     } else {
       var result = [];
 
-      for (var i = 0; i < arr.length; i++) {
-        result.push(arr[i] * n);
+      for (var _i2 = 0; _i2 < arr.length; _i2++) {
+        result.push(arr[_i2] * n);
       }
 
       return result;
@@ -102,9 +102,9 @@ function getParticipants(handshakes) {
 function isIsogram(str) {
   str = str.toLowerCase();
 
-  for (var i = 0; i < str.length; ++i) {
-    for (var j = i + 1; j < str.length; ++j) {
-      if (str[i] === str[j]) {
+  for (var _i3 = 0; _i3 < str.length; ++_i3) {
+    for (var j = _i3 + 1; j < str.length; ++j) {
+      if (str[_i3] === str[j]) {
         return false;
       }
     }
@@ -129,9 +129,9 @@ function solution(str) {
 function absentVowel(x) {
   var vowels = 'aeiou';
 
-  for (var i in vowels) {
-    if (x.toLowerCase().indexOf(vowels[i]) == -1) {
-      return Number(i);
+  for (var _i4 in vowels) {
+    if (x.toLowerCase().indexOf(vowels[_i4]) == -1) {
+      return Number(_i4);
     }
   }
 } // Create a function that converts US dollars (USD) to Chinese Yuan (CNY) . The input is the amount of USD as an integer, and the output should be a string that states the amount of Yuan followed by 'Chinese Yuan'
@@ -177,9 +177,9 @@ function decode(string) {
 function generatePairs(n) {
   var arr = [];
 
-  for (var i = 0; i <= n; i++) {
-    for (var j = i; j <= n; j++) {
-      arr.push([i, j]);
+  for (var _i5 = 0; _i5 <= n; _i5++) {
+    for (var j = _i5; j <= n; j++) {
+      arr.push([_i5, j]);
     }
   }
 
@@ -302,8 +302,8 @@ function gooseFilter(birds) {
 function pipeFix(numbers) {
   var arr = [];
 
-  for (var i = numbers[0]; i <= numbers[numbers.length - 1]; i++) {
-    arr.push(i);
+  for (var _i6 = numbers[0]; _i6 <= numbers[numbers.length - 1]; _i6++) {
+    arr.push(_i6);
   }
 
   return arr;
@@ -355,8 +355,8 @@ function squareSum(numbers) {
     return item * item;
   });
 
-  for (var i = 0; i < square.length; i++) {
-    sum += square[i];
+  for (var _i7 = 0; _i7 < square.length; _i7++) {
+    sum += square[_i7];
   }
 
   return sum;
@@ -436,7 +436,16 @@ function findUniq(arr) {
   var strayChar = arr[0];
   if (strayChar !== arr[1] && strayChar !== arr[2]) return strayChar;
 
-  for (var i = 1; i < arr.length; i++) {
-    if (strayChar !== arr[i]) return arr[i];
+  for (var _i8 = 1; _i8 < arr.length; _i8++) {
+    if (strayChar !== arr[_i8]) return arr[_i8];
   }
+} // Count characters in your string
+
+
+function count(string) {
+  var count = {};
+  string.split('').forEach(function (s) {
+    count[i] ? count[s]++ : count[i] = 1;
+  });
+  return count;
 }
