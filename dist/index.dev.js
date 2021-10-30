@@ -557,4 +557,11 @@ var zeroFuel = function zeroFuel(distanceToPump, mpg, fuelLeft) {
   } else {
     return false;
   }
-};
+}; // Multiple of index
+
+
+function multipleOfIndex(array) {
+  return array.filter(function (item, id) {
+    return item % id === 0;
+  });
+}

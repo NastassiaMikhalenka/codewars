@@ -581,3 +581,8 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
     return false
   }
 };
+
+// Multiple of index
+function multipleOfIndex(array) {
+  return array.filter((item, id) => item % id === 0);
+ }
