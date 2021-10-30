@@ -521,3 +521,10 @@ function likes(names) {
 function nicknameGenerator(name){
   return (name.length<4 ? "Error: Name too short" : /^[a-z]{2}[aeiou]/i.test(name)? name.slice(0,4) : name.slice(0,3))
 }
+
+
+// Array plus array
+
+function arrayPlusArray(arr1, arr2) {
+  return arr1.concat(arr2).reduce((acc, cur) => acc + cur);
+}
