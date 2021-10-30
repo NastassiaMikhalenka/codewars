@@ -369,4 +369,11 @@ function greet(name, owner) {
   } else {
     return "Hello guest";
   }
-}
+} // Unique In Order
+
+
+var uniqueInOrder = function uniqueInOrder(iterable) {
+  return [].filter.call(iterable, function (a, i) {
+    return iterable[i - 1] !== a;
+  });
+};

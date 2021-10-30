@@ -375,3 +375,12 @@ function pipeFix(numbers){
         return ("Hello guest")
       }
     }
+
+    // Unique In Order
+
+    var uniqueInOrder=function(iterable){
+      return [].filter.call(iterable, (function (a, i) { 
+        return iterable[i - 1] !== a 
+      }));
+      
+    }
