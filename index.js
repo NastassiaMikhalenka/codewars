@@ -515,3 +515,9 @@ function likes(names) {
   function disemvowel(str) {
     return str.replace(/[aeiouAEIOU]/g, "");
  }
+
+//  Nickname Generator
+
+function nicknameGenerator(name){
+  return (name.length<4 ? "Error: Name too short" : /^[a-z]{2}[aeiou]/i.test(name)? name.slice(0,4) : name.slice(0,3))
+}
