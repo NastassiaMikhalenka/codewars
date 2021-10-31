@@ -661,3 +661,17 @@ function createPhoneNumber(numbers){
   numbers = numbers.join('')
   return '(' + numbers.substring(0, 3) + ') ' + numbers.substring(3, 6) + '-' + numbers.substring(6)
 }
+
+
+// Multiplication table
+multiplicationTable = function(size) {
+  let array = [];
+  for (let i = 1; i <= size; i++){
+    let item = [];
+    for (let j = 1; j <= size; j++){
+      item.push(i * j)
+    }
+    array.push(item)
+  }
+  return array
+}

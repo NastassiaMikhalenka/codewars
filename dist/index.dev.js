@@ -637,4 +637,21 @@ function countSmileys(arr) {
 function createPhoneNumber(numbers) {
   numbers = numbers.join('');
   return '(' + numbers.substring(0, 3) + ') ' + numbers.substring(3, 6) + '-' + numbers.substring(6);
-}
+} // Multiplication table
+
+
+multiplicationTable = function multiplicationTable(size) {
+  var array = [];
+
+  for (var _i10 = 1; _i10 <= size; _i10++) {
+    var item = [];
+
+    for (var j = 1; j <= size; j++) {
+      item.push(_i10 * j);
+    }
+
+    array.push(item);
+  }
+
+  return array;
+};
