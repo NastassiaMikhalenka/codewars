@@ -669,4 +669,9 @@ function sometimes(fn) {
     if (i % 2 !== 0) return fn(a, b);
     if (i % 2 === 0) return "hmm, I don't know!";
   };
+} //MakeUpperCase 
+
+
+function makeUpperCase(str) {
+  return str.toUpperCase();
 }
