@@ -697,4 +697,22 @@ function booleanToString(b) {
   } else {
     return "false";
   }
-}
+} // Volume of a Cuboid
+
+
+var Kata =
+/*#__PURE__*/
+function () {
+  function Kata() {
+    _classCallCheck(this, Kata);
+  }
+
+  _createClass(Kata, null, [{
+    key: "getVolumeOfCuboid",
+    value: function getVolumeOfCuboid(length, width, height) {
+      return length * width * height;
+    }
+  }]);
+
+  return Kata;
+}();
