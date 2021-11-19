@@ -688,4 +688,13 @@ function hello(name) {
   } else {
     return "Hello, ".concat(name[0].toUpperCase()).concat(name.substring(1).toLowerCase(), "!");
   }
+} // Convert a Boolean to a String
+
+
+function booleanToString(b) {
+  if (b) {
+    return "true";
+  } else {
+    return "false";
+  }
 }
