@@ -690,7 +690,21 @@ function sometimes(fn) {
 }
 
 //MakeUpperCase 
-
 function makeUpperCase(str) {
   return str.toUpperCase()
 }
+
+//Remove duplicates from list
+function distinct(a) {
+  return [...new Set(a)];
+}
+
+//Hello, Name or World!
+function hello(name) {
+  if (typeof name === "undefined" || name.length === 0) {
+    return `Hello, World!`;
+  } else {
+    return `Hello, ${name[0].toUpperCase()}${name.substring(1,).toLowerCase()}!`;
+  }
+}
+
