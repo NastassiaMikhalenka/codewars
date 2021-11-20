@@ -715,4 +715,17 @@ function () {
   }]);
 
   return Kata;
-}();
+}(); // How good are you really?
+
+
+function betterThanAverage(classPoints, yourPoints) {
+  var sr = classPoints.reduce(function (a, b) {
+    return a + b;
+  }) / classPoints.length;
+
+  if (sr > yourPoints) {
+    return false;
+  } else {
+    return true;
+  }
+}
