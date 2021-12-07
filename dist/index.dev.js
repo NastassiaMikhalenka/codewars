@@ -743,4 +743,15 @@ function even_or_odd(number) {
   if (number === 0) {
     return "Even";
   }
-}
+} // Reversed sequence
+
+
+var reverseSeq = function reverseSeq(n) {
+  arr = [];
+
+  for (var _i11 = n; _i11 > 0; _i11--) {
+    arr.push(_i11);
+  }
+
+  return arr;
+};
