@@ -747,11 +747,18 @@ function even_or_odd(number) {
   }
 }
 
-// Reversed sequence
-const reverseSeq = n => {
-  arr = []
-  for(let i = n; i > 0; i--){
-   arr.push(i)
-  }
-  return arr
-};
+// // Reversed sequence
+// const reverseSeq = n => {
+//   arr = []
+//   for(let i = n; i > 0; i--){
+//    arr.push(i)
+//   }
+//   return arr
+// };
+
+
+// Convert a Number to a String!
+
+function numberToString(num) {
+  return num.toString();
+}

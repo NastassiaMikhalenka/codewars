@@ -743,15 +743,17 @@ function even_or_odd(number) {
   if (number === 0) {
     return "Even";
   }
-} // Reversed sequence
+} // // Reversed sequence
+// const reverseSeq = n => {
+//   arr = []
+//   for(let i = n; i > 0; i--){
+//    arr.push(i)
+//   }
+//   return arr
+// };
+// Convert a Number to a String!
 
 
-var reverseSeq = function reverseSeq(n) {
-  arr = [];
-
-  for (var _i11 = n; _i11 > 0; _i11--) {
-    arr.push(_i11);
-  }
-
-  return arr;
-};
+function numberToString(num) {
+  return num.toString();
+}
