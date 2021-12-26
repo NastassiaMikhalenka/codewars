@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07ac4995-3605-4dd1-9c70-439b4c202165" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/dist/index.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.dev.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="07ac4995-3605-4dd1-9c70-439b4c202165" name="Changes" comment="Convert a Number to a String!" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,10 +31,34 @@
       <option name="presentableId" value="Default" />
       <updated>1637342036204</updated>
       <workItem from="1637342040525" duration="506000" />
+      <workItem from="1639768708324" duration="93000" />
     </task>
+    <task id="LOCAL-00001" summary="Convert a Number to a String!">
+      <created>1639768741991</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1639768741991</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Convert a Number to a String!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Convert a Number to a String!" />
   </component>
 </project>

@@ -762,3 +762,18 @@ function even_or_odd(number) {
 function numberToString(num) {
   return num.toString();
 }
+
+//Count of positives / sum of negatives
+
+function countPositivesSumNegatives(input) {
+  if (input == null || input.length < 1){
+return [];
+    }
+
+let pos = input.filter(x => x > 0)
+let neg = input.filter(x => x <= 0)
+let sum = neg.reduce((a, b) => a + b, 0)
+
+
+return [pos.length, sum]
+}

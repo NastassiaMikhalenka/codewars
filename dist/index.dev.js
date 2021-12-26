@@ -756,4 +756,22 @@ function even_or_odd(number) {
 
 function numberToString(num) {
   return num.toString();
+} //Count of positives / sum of negatives
+
+
+function countPositivesSumNegatives(input) {
+  if (input == null || input.length < 1) {
+    return [];
+  }
+
+  var pos = input.filter(function (x) {
+    return x > 0;
+  });
+  var neg = input.filter(function (x) {
+    return x <= 0;
+  });
+  var sum = neg.reduce(function (a, b) {
+    return a + b;
+  }, 0);
+  return [pos.length, sum];
 }
