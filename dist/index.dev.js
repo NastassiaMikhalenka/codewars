@@ -774,4 +774,12 @@ function countPositivesSumNegatives(input) {
     return a + b;
   }, 0);
   return [pos.length, sum];
+} //Counting sheep...
+
+
+function countSheeps(arrayOfSheep) {
+  var someOfSheep = arrayOfSheep.filter(function (item) {
+    return item === true;
+  });
+  return someOfSheep.length;
 }

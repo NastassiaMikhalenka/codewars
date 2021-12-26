@@ -777,3 +777,11 @@ let sum = neg.reduce((a, b) => a + b, 0)
 
 return [pos.length, sum]
 }
+
+//Counting sheep...
+
+function countSheeps(arrayOfSheep) {
+  let someOfSheep = arrayOfSheep.filter(item => item === true);
+  return someOfSheep.length
+  
+}
