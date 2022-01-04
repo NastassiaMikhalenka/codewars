@@ -788,4 +788,11 @@ function countSheeps(arrayOfSheep) {
 function paperwork(n, m) {
   if (n < 0 || m < 0) return 0;
   return n * m;
+} //Incrementer 
+
+
+function incrementer(nums) {
+  return nums.map(function (value, index) {
+    return (value + index + 1) % 10;
+  });
 }
