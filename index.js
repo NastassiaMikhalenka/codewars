@@ -817,3 +817,13 @@ function between(a, b) {
   }
   return arr
 }
+
+//Grasshopper - Summation
+
+function summation(num) {
+  if (num == 1) { 
+  return 1;
+  } else { 
+  return (num + summation(num - 1));
+  }
+ }
