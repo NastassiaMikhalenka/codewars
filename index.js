@@ -807,3 +807,13 @@ function hoopCount (n) {
     return "Keep at it until you get it"
 }
 }
+
+// What is between?
+
+function between(a, b) {
+  let arr = []
+  for(i = a; i<=b; i++){
+    arr.push(i)
+  }
+  return arr
+}

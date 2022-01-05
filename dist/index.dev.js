@@ -804,4 +804,15 @@ function hoopCount(n) {
   } else {
     return "Keep at it until you get it";
   }
+} // What is between?
+
+
+function between(a, b) {
+  var arr = [];
+
+  for (i = a; i <= b; i++) {
+    arr.push(i);
+  }
+
+  return arr;
 }
