@@ -831,3 +831,14 @@ function summation(num) {
  //Function 2 - squaring an argument
 
  const square = (n) => Math.pow(n, 2)
+
+ //Opposites Attract
+ function lovefunc(flower1, flower2){
+  if(flower1 % 2 === 1 && flower2 % 2 === 1){
+    return false
+  } else if(flower1 % 2 === 0 && flower2 % 2 === 0){
+    return false
+  } else {
+    return true
+  }
+}
