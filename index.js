@@ -827,3 +827,7 @@ function summation(num) {
   return (num + summation(num - 1));
   }
  }
+
+ //Function 2 - squaring an argument
+
+ const square = (n) => Math.pow(n, 2)

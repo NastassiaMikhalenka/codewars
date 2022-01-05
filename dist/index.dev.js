@@ -824,4 +824,9 @@ function summation(num) {
   } else {
     return num + summation(num - 1);
   }
-}
+} //Function 2 - squaring an argument
+
+
+var square = function square(n) {
+  return Math.pow(n, 2);
+};
