@@ -795,4 +795,13 @@ function incrementer(nums) {
   return nums.map(function (value, index) {
     return (value + index + 1) % 10;
   });
+} //Keep up the hoop 
+
+
+function hoopCount(n) {
+  if (n >= 10) {
+    return "Great, now move on to tricks";
+  } else {
+    return "Keep at it until you get it";
+  }
 }
