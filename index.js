@@ -861,3 +861,18 @@ function getCount(str) {
 function solve(arr){
   return arr.filter((item, i) => arr.lastIndexOf(item) == i);
 }
+
+// Expressions Matter
+
+function expressionMatter(a, b, c) {
+  let i1 = a * (b + c)
+  let i2 = a * b * c
+  let i3 = a + b * c
+  let i4 = (a + b) * c
+  let i5 = a + b + c
+  
+  let arr = []
+  arr.push(i1, i2, i3, i4, i5)
+  return Math.max(...arr);
+  
+  }

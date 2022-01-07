@@ -860,4 +860,16 @@ function solve(arr) {
   return arr.filter(function (item, i) {
     return arr.lastIndexOf(item) == i;
   });
+} // Expressions Matter
+
+
+function expressionMatter(a, b, c) {
+  var i1 = a * (b + c);
+  var i2 = a * b * c;
+  var i3 = a + b * c;
+  var i4 = (a + b) * c;
+  var i5 = a + b + c;
+  var arr = [];
+  arr.push(i1, i2, i3, i4, i5);
+  return Math.max.apply(Math, arr);
 }
