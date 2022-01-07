@@ -853,4 +853,11 @@ function getCount(str) {
   }
 
   return vowelsCount;
+} // Simple remove duplicates
+
+
+function solve(arr) {
+  return arr.filter(function (item, i) {
+    return arr.lastIndexOf(item) == i;
+  });
 }

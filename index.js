@@ -855,3 +855,9 @@ function getCount(str) {
   
   return vowelsCount;
 }
+
+// Simple remove duplicates
+
+function solve(arr){
+  return arr.filter((item, i) => arr.lastIndexOf(item) == i);
+}
