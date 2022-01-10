@@ -876,3 +876,10 @@ function expressionMatter(a, b, c) {
   return Math.max(...arr);
   
   }
+
+  //Grasshopper - Terminal game move function 
+
+  function move (position, roll) {
+    let newPosition = position + (roll*2)
+    return newPosition
+  }
