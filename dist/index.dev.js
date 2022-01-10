@@ -878,4 +878,10 @@ function expressionMatter(a, b, c) {
 function move(position, roll) {
   var newPosition = position + roll * 2;
   return newPosition;
+} //Grasshopper - Basic Function Fixer
+
+
+function addFive(num) {
+  var total = num + 5;
+  return total;
 }
