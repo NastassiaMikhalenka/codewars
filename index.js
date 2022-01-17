@@ -890,3 +890,10 @@ function expressionMatter(a, b, c) {
     var total = num + 5
     return total
   }
+
+  //Grasshopper - Variable Assignment Debug
+
+  var a = "dev"
+var b = "Lab"
+
+var nameGrasshopper = `${a + b}`

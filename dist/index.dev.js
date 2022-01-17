@@ -884,4 +884,9 @@ function move(position, roll) {
 function addFive(num) {
   var total = num + 5;
   return total;
-}
+} //Grasshopper - Variable Assignment Debug
+
+
+var a = "dev";
+var b = "Lab";
+var nameGrasshopper = "".concat(a + b);
