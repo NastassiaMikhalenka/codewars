@@ -897,3 +897,9 @@ function expressionMatter(a, b, c) {
 var b = "Lab"
 
 var nameGrasshopper = `${a + b}`
+
+//Function 3 - multiplying two numbers
+
+const multiply = (n, i) => {
+  return n*i
+}
